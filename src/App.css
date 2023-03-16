@@ -1,39 +1,50 @@
+:root {
+  /* Primary Colors */
+  --Lime-Green: #1db489;
+  --Bright-Red: #dc414c;
+  --Facebook: #198ff5;
+  --Twitter: #1ca0f2;
+  --Instagram: linear-gradient(#fdc468,#df4996);
+  --YouTube: #c4032a;
+  
+  /* Dark Theme */
+  --Dark-Toggle: linear-gradient(#378fe6,#3eda82);
+  --Dark-BG: #1e202a;
+  --Dark-Top-BG-Pattern: #1f212e;
+  --Dark-Card-BG: #252a41;
+  --Desaturated-Blue-Text: #8b97c6;
+  --White-Text: #ffffff;
+
+  /* Light Theme */
+  --Light-Toggle: #aeb3cb;
+  --Light-BG: hsl(0, 0%, 100%);
+  --Light-Top-BG-Pattern: hsl(225, 100%, 98%);
+  --Light-Card-BG: hsl(227, 47%, 96%);
+  --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+  --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+}
+
+p {
+  margin: 0;
+}
+
+.font-link-normal {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-link-bold {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: normal;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--Dark-BG);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-

@@ -1,0 +1,82 @@
+
+
+.follower-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--Dark-Card-BG);
+    height: 215px;
+    width: 255px;
+    border-radius: 5px;
+}
+
+.Facebook {
+    height: 5px;
+    width: 100%;
+    background-color: var(--Facebook);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.Twitter {
+    height: 2px;
+    background-color: var(--Twitter);
+}
+
+.Instagram {
+    height: 2px;
+    background-color: var(--Instagram);
+}
+
+.Youtube {
+    height: 2px;
+    background-color: var(--Youtube);
+}
+
+.follower-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.username-text {
+    font-size: 14px;
+    color: var(--Desaturated-Blue-Text);
+}
+
+.follower-card-follwers-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.followers-number {
+    font-size: 48px;
+    color: var(--White-Text);
+}
+
+.followers-text {
+    font-size: 14px;
+    color: var(--Desaturated-Blue-Text);
+    letter-spacing: 3px;
+}
+
+.follower-card-change-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: 12px;
+}
+
+.positive {
+    color: var(--Lime-Green);
+}
+
+.negative {
+    color: var(--Bright-Red);
+}
