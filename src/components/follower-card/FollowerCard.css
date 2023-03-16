@@ -9,29 +9,53 @@
     height: 215px;
     width: 255px;
     border-radius: 5px;
+    position: relative;
+    border: 0;
+}
+
+.follower-card:hover {
+    filter:brightness(1.25)
 }
 
 .Facebook {
+    background-color: var(--Facebook);
     height: 5px;
     width: 100%;
-    background-color: var(--Facebook);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    position: absolute;
+    top: 0;
+
 }
 
 .Twitter {
-    height: 2px;
     background-color: var(--Twitter);
+    height: 5px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    top: 0;
 }
 
 .Instagram {
-    height: 2px;
-    background-color: var(--Instagram);
+    background: var(--Instagram);
+    height: 5px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    top: 0;
 }
 
 .Youtube {
-    height: 2px;
-    background-color: var(--Youtube);
+    background-color: var(--YouTube);
+    height: 5px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    top: 0;
 }
 
 .follower-card-header {

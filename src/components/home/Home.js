@@ -1,3 +1,5 @@
+import "./Home.css"
+
 import FollowerCard from "../follower-card/FollowerCard";
 // import TodayCard from "../today-card/TodayCard";
 
@@ -8,11 +10,11 @@ import YoutubeAccount from "../../services/YoutubeAccount";
 
 export default function Home() {
     return (
-        <>
+        <div className="follower-cards-row">
         <FollowerCard account={FacebookAccount}/>
         <FollowerCard account={TwitterAccount}/>
         <FollowerCard account={InstagramAccount}/>
         <FollowerCard account={YoutubeAccount}/>
-        </>
+        </div>
     );
 }
