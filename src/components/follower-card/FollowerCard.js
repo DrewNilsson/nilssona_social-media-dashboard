@@ -44,7 +44,7 @@ export default function FollowerCard({ account }) {
     }
 
     return (
-        <div>
+        <>
             <Button className="follower-card">
                 <div className={account.platform}></div>
                 <div className="follower-card-header">
@@ -57,6 +57,6 @@ export default function FollowerCard({ account }) {
                 </div>
                 <FollowerChange followerChange={account.followerChange} />
             </Button>
-        </div>
+        </>
     );
 }

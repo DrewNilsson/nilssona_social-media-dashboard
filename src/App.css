@@ -24,6 +24,10 @@
   --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
 }
 
+body {
+  background: var(--Dark-BG);
+}
+
 p {
   margin: 0;
 }

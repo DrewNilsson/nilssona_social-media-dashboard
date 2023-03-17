@@ -1,0 +1,50 @@
+
+
+.today-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--Dark-Card-BG);
+    height: 125px;
+    width: 255px;
+    border-radius: 5px;
+    position: relative;
+    border: 0;
+    padding: 25px;
+}
+
+.today-card:hover {
+    filter:brightness(1.25)
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 66%;
+    height: 100%;
+}
+
+.title {
+    font-size: 14px;
+    color: var(--Desaturated-Blue-Text);
+}
+
+.value {
+    font-size: 32px;
+    color: var(--White-Text);
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 33%;
+    height: 100%;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
