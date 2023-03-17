@@ -8,7 +8,7 @@
   --YouTube: #c4032a;
   
   /* Dark Theme */
-  --Dark-Toggle: linear-gradient(#378fe6,#3eda82);
+  --Dark-Toggle: linear-gradient(to right,#378fe6,#3eda82);
   --Dark-BG: #1e202a;
   --Dark-Top-BG-Pattern: #1f212e;
   --Dark-Card-BG: #252a41;
@@ -22,10 +22,6 @@
   --Light-Card-BG: hsl(227, 47%, 96%);
   --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
   --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
-}
-
-body {
-  background: var(--Dark-BG);
 }
 
 p {

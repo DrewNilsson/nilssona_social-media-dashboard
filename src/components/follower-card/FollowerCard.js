@@ -6,7 +6,7 @@ import DownIcon from "../../assets/icon-down.svg";
 
 import { Button } from "react-bootstrap";
 
-export default function FollowerCard({ account }) {
+export default function FollowerCard({ account, theme }) {
 
     function Followers({ followers }) {
         if(followers >= 1000000) {
@@ -17,7 +17,7 @@ export default function FollowerCard({ account }) {
         // console.log(followers);
         return (
             <>
-                <p className="followers-number font-link-bold">{followers}</p>
+                <p className={`followers-number-${theme} font-link-bold`}>{followers}</p>
             </>
         );
     }
@@ -27,10 +27,10 @@ export default function FollowerCard({ account }) {
             return (
                 <div className="follower-card-change-row negative">
                     <img src={DownIcon} alt="" />
-                    <p className="font-link-normal">
+                    <p className="font-link-bold">
                         {followerChange - followerChange * 2}
                     </p>
-                    <p className="font-link-normal">Today</p>
+                    <p className="font-link-bold">Today</p>
                 </div>
             );
         }
@@ -45,11 +45,11 @@ export default function FollowerCard({ account }) {
 
     return (
         <>
-            <Button className="follower-card">
+            <Button className={`follower-card follower-card-${theme}`}>
                 <div className={account.platform}></div>
                 <div className="follower-card-header">
                     <img src={account.icon} alt={account.platform} />
-                    <p className="username-text font-link-bold">{account.username} </p>
+                    <p className={`username-text-${theme} font-link-bold`}>{account.username} </p>
                 </div>
                 <div className="follower-card-follwers-col">
                     <Followers followers={account.followers} />

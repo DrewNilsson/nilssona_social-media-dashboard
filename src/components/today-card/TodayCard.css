@@ -3,13 +3,20 @@
 .today-card {
     display: flex;
     align-items: center;
-    background-color: var(--Dark-Card-BG);
     height: 125px;
     width: 255px;
     border-radius: 5px;
     position: relative;
     border: 0;
     padding: 25px;
+}
+
+.today-card-light {
+    background-color: var(--Light-Card-BG);
+}
+
+.today-card-dark {
+    background-color: var(--Dark-Card-BG);
 }
 
 .today-card:hover {
@@ -25,12 +32,22 @@
     height: 100%;
 }
 
-.title {
+.title-light {
+    font-size: 14px;
+    color: var(--Dark-Grayish-Blue-Text);
+}
+
+.title-dark {
     font-size: 14px;
     color: var(--Desaturated-Blue-Text);
 }
 
-.value {
+.value-light {
+    font-size: 32px;
+    color: var(--Very-Dark-Blue-Text);
+}
+
+.value-dark {
     font-size: 32px;
     color: var(--White-Text);
 }

@@ -5,18 +5,18 @@ import { Button } from "react-bootstrap";
 import UpIcon from "../../assets/icon-up.svg";
 import DownIcon from "../../assets/icon-down.svg";
 
-export default function TodayCard({ account }) {
+export default function TodayCard({ account, theme }) {
 
     function Value({ value }) {
         if(value >= 1000000) {
             value = value.toString().slice(0, -6) + "M";
-        } else if(value >= 10000) {
+        } else if(value >= 10000) { 
             value = value.toString().slice(0, -3) + "K";
         } 
         // console.log(followers);
         return (
             <>
-                <p className="value font-link-bold">{value}</p>
+                <p className={`value-${theme} font-link-bold`}>{value}</p>
             </>
         );
     }
@@ -42,9 +42,9 @@ export default function TodayCard({ account }) {
 
     return (
         <>
-            <Button className="today-card">
+            <Button className={`today-card today-card-${theme}`}>
                 <div className="left-col">
-                    <p className="title font-link-bold">{account.title}</p>
+                    <p className={`title-${theme} font-link-bold`}>{account.title}</p>
                     <Value value={account.value} />
                 </div>
                 <div className="right-col">

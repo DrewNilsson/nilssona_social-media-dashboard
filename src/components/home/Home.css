@@ -1,3 +1,5 @@
+
+
 .home {
     display: flex;
     flex-direction: column;
@@ -7,13 +9,20 @@
 }
 
 .dashboard-top-bg {
-    background: var(--Dark-Top-BG-Pattern);
     width: 100vw;
     height: 25%;
     position: absolute;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     top: 0;
+}
+
+.top-bg-light {
+    background: var(--Light-Top-BG-Pattern);
+}
+
+.top-bg-dark {
+    background: var(--Dark-Top-BG-Pattern);
 }
 
 .dashboard-title-row {
@@ -32,13 +41,27 @@
 }
 
 .dashboard-title {
-    color: var(--White-Text);
     font-size: 32px;
 }
 
+.title-light {
+    color: var(--Very-Dark-Blue-Text);
+}
+
+.title-dark {
+    color: var(--White-Text);
+}
+
 .dashboard-total-followers {
-    color: var(--Desaturated-Blue-Text);
     font-size: 14px;
+}
+
+.total-followers-light {
+    color: var(--Dark-Grayish-Blue-Text);
+}
+
+.total-followers-dark {
+    color: var(--Desaturated-Blue-Text);
 }
 
 .title-row-col-right {
@@ -55,8 +78,15 @@
 }
 
 .dark-mode-text {
-    color: var(--White-Text);
     font-size: 16px;
+}
+
+.mode-text-light {
+    color: var(--Very-Dark-Blue-Text);
+}
+
+.mode-text-dark {
+    color: var(--White-Text);
 }
 
 .follower-cards-row {
@@ -69,10 +99,17 @@
 }
 
 .overview-header {
-    color: var(--White-Text);
     font-size: 24px;
     margin-top: 50px;
     align-self: flex-start;
+}
+
+.overview-header-light {
+    color: var(--Very-Dark-Blue-Text);
+}
+
+.overview-header-dark {
+    color: var(--White-Text);
 }
 
 .overview-cards-grid {
@@ -85,3 +122,77 @@
     margin-top: 25px;
 }
 
+
+
+/* Toggle Switch Button */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--Dark-Toggle);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: var(--Dark-Top-BG-Pattern);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background: var(--Light-Top-BG-Pattern);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .follower-cards-row {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        justify-self: center;
+    }
+
+    .overview-cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+
+}
